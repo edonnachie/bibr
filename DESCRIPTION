@@ -1,0 +1,13 @@
+Package: bibr
+Type: Package
+Title: Bibliography Manager to Handle BibTeX and File-Based Resources
+Version: 0.1.0
+Author: Ewan Donnachie <ewan@donnachie.net>
+Maintainer: Ewan Donnachie <ewan@donnachie.net>
+Description: Look up DOIs using rcrossref. Manage and search bibtex and file-
+    based collections.
+License: MIT
+LazyData: TRUE
+RoxygenNote: 6.1.0
+Suggests: 
+    testthat
