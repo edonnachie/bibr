@@ -12,7 +12,9 @@ is_doi <- function(string) {
 }
 
 
-
+#' Extract all DOI from a character object
+#'
+#'
 #' @param string String from which to extract all doi entries
 #' @param as_vector A single logical value. If TRUE (default), calls `unlist` to return to a single character vector. If FALSE, returns a list of character vectors, one for each element of `string`
 #' @export
