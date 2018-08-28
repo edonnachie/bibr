@@ -8,7 +8,7 @@ test_that("PDF filename parsed correctly", {
     "Kaplan-Meier-1958-Nonparametric_estimation.pdf",
     "Kaplan_Meier1958-Non-parametric_estimation.pdf")
 
-  expected_output <- tibble:tibble(
+  expected_output <- tibble::tibble(
       filename = filenames[1],
       author = "Cox",
       year = "1972",
@@ -19,7 +19,7 @@ test_that("PDF filename parsed correctly", {
       author = "Cox",
       year = "1972",
       title = "Regression Models and Life-Tables"
-    )
+    ) %>%
     tibble::add_row(
       filename = filenames[3],
       author = "Kaplan-Meier",
