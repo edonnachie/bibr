@@ -4,10 +4,12 @@
 \alias{doi_to_filename}
 \title{Clean a DOI to form a valid filename}
 \usage{
-doi_to_filename(doi)
+doi_to_filename(doi, ext = "bib")
 }
 \arguments{
 \item{doi}{DOI to clean}
+
+\item{ext}{File extension to append (Default: "bib")}
 }
 \value{
 String with "/" converted to "_" and ".bib" appended
@@ -15,5 +17,5 @@ String with "/" converted to "_" and ".bib" appended
 \description{
 1) "/" is converted to "_"
 2) "doi:" is removed
-3) file extension ".bib" is appended
+3) file extension `ext` is appended (Default: "bib")
 }

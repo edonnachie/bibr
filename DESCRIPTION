@@ -11,3 +11,4 @@ LazyData: TRUE
 RoxygenNote: 6.1.0
 Suggests: 
     testthat
+Encoding: UTF-8

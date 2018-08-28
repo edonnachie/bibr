@@ -31,7 +31,7 @@ doi_lookup <- function(doi){
 #'
 #' @param doi DOI identifier (or DOI hyperlink)
 #' @return Character vector containing bibtex citation, or NULL if no entry found
-#' @importFrom rcrossref::cr_cn
+#' @importFrom rcrossref cr_cn
 #' @export
 doi_lookup_crossref <- function(doi) {
   if (!is_doi(doi)) return(NA_character_)

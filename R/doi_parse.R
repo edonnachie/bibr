@@ -19,7 +19,6 @@ is_doi <- function(string) {
 #' @param as_vector A single logical value. If TRUE (default), calls `unlist` to return to a single character vector. If FALSE, returns a list of character vectors, one for each element of `string`
 #' @export
 #' @importFrom stringi stri_extract_all
-#' Extract all doi from a string
 extract_doi <- function(string, as_vector = TRUE) {
   out <- stringi::stri_extract_all_regex(string, pattern = doiRegex)
   if (as_vector)
