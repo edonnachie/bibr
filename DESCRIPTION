@@ -8,6 +8,7 @@ Description: Look up DOIs using rcrossref. Manage and search bibtex and file-
     based collections.
 License: MIT
 LazyData: TRUE
+Imports: stringi,bibtex,httr,pdftools,rcrossref,stringi,tibble
 RoxygenNote: 6.1.0
 Suggests: 
     testthat
