@@ -1,14 +1,18 @@
 Package: bibr
 Type: Package
 Title: Bibliography Manager to Handle BibTeX and File-Based Resources
-Version: 0.1.0
-Author: Ewan Donnachie <ewan@donnachie.net>
-Maintainer: Ewan Donnachie <ewan@donnachie.net>
 Description: Look up DOIs using rcrossref. Manage and search bibtex and file-
     based collections.
-License: MIT
+Version: 0.1.0
+Date: 2018-08-28
+Authors@R: c(
+    person("Ewan", "Donnachie", , "ewan@donnachie.net", c("aut", "cre"), , comment = c(ORCID = "0000-0002-0668-0049"))
+  )
+URL: https://github.com/edonnachie/bibr
+BugReports: https://github.com/edonnachie/bibr/issues
+License: MIT + file LICENSE
 LazyData: TRUE
-Imports: stringi,bibtex,httr,pdftools,rcrossref,stringi,tibble
+Imports: stringi,bibtex,httr,pdftools,rcrossref,tibble
 RoxygenNote: 6.1.0
 Suggests: 
     testthat
