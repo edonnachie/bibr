@@ -2,15 +2,16 @@
 #'
 #' 1) "/" is converted to "_"
 #' 2) "doi:" is removed
-#' 3) file extension ".bib" is appended
+#' 3) file extension `ext` is appended (Default: "bib")
 #'
 #' @param doi DOI to clean
+#' @param ext File extension to append (Default: "bib")
 #' @return String with "/" converted to "_" and ".bib" appended
 #' @export
-doi_to_filename <- function(doi){
-  paste0(
+doi_to_filename <- function(doi, ext = "bib"){
+  paste(
     gsub("/", "_", sub("doi:", "", doi)),
-    ".bib"
+    ext, sep = "."
     )
 }
 
